@@ -1,0 +1,81 @@
+/* App.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  margin-top: 11rem;
+}
+
+.bloc-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  padding: 24px 50px;
+  padding-top: 20px;
+  transition: color 0.3s ease;
+  border: 1px solid #ccc;
+  position: relative;
+  top: 41px;
+  /* border-top-left-radius: 7px; */
+}
+
+.tabs:hover {
+  color: #333;
+}
+
+.active-tabs {
+  color: #333;
+}
+
+.active-tabs::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 10px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+.content-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+element.style {
+}
+.active-content {
+  display: block;
+}
+.content {
+  display: none;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  margin-top: 10px;
+  transition: opacity 0.3s ease;
+  border-bottom-right-radius: 5px;
+}
+
+.active-content {
+  display: block;
+}
