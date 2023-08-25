@@ -31,14 +31,15 @@
   position: relative;
   top: 41px;
   /* border-top-left-radius: 7px; */
+  width: 328px;
 }
-
 .tabs:hover {
   color: #333;
 }
 
 .active-tabs {
   color: #333;
+  background-color: #ccc;
 }
 
 .active-tabs::before {
@@ -47,7 +48,7 @@
   top: -5px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% + 10px);
+  width: calc(100% + 2px);
   height: 5px;
   background: rgb(88, 147, 241);
 }
@@ -65,8 +66,8 @@ element.style {
 }
 .content {
   display: none;
-  width: 100%;
-  max-width: 400px;
+  /* width: 100%; */
+  /* max-width: 400px; */
   padding: 20px;
   background: white;
   border: 1px solid #ccc;
@@ -74,8 +75,22 @@ element.style {
   margin-top: 10px;
   transition: opacity 0.3s ease;
   border-bottom-right-radius: 5px;
+  width: 1247px;
+  height: 29rem;
 }
 
 .active-content {
-  display: block;
+  display: flex;
+}
+.right img {
+  width: 36rem;
+  position: absolute;
+  right: 9rem;
+  height: 26rem;
+}
+.left {
+  width: 36rem;
+  position: relative;
+  margin: 0rem 0;
+  top: 2rem;
 }
